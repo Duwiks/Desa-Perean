@@ -1,0 +1,427 @@
+/* ============================================================
+   style.css — Desa Wisata Perean
+   Consolidated stylesheet for all pages
+   ============================================================ */
+
+/* ── Reset & Base ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafaf8;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── Typography helpers ───────────────────────────────────── */
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-heading {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.header-glass {
+    background: rgba(6, 38, 25, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#main-header.scrolled .header-glass {
+    background: rgba(6, 38, 25, 0.92);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-icon {
+    background: linear-gradient(135deg, #059669, #10b981);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+}
+
+.nav-link.active {
+    background: rgba(251, 191, 36, 0.2) !important;
+    color: #fbbf24 !important;
+}
+
+/* Hamburger animation */
+#hamburger-btn.open .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger-btn.open .hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+#hamburger-btn.open .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(to bottom,
+            rgba(6, 38, 25, 0.55) 0%,
+            rgba(6, 38, 25, 0.2) 50%,
+            rgba(6, 38, 25, 0.85) 100%),
+        url('../img/hero-bg.png') center / cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-badge {
+    background: rgba(251, 191, 36, 0.15);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.hero-cta-primary {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 8px 30px rgba(245, 158, 11, 0.4);
+    transition: all 0.3s ease;
+}
+
+.hero-cta-primary:hover {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    box-shadow: 0 12px 40px rgba(245, 158, 11, 0.6);
+    transform: translateY(-2px);
+}
+
+.hero-cta-secondary {
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+}
+
+.hero-cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Scroll indicator animation */
+@keyframes bounce-slow {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(8px);
+        opacity: 0.5;
+    }
+}
+
+.scroll-indicator {
+    animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Stats card */
+.stat-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ============================================================
+   ABOUT SECTION
+   ============================================================ */
+
+.about-image-frame {
+    position: relative;
+}
+
+.about-image-frame::before {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    right: -16px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #10b981;
+    border-radius: inherit;
+    z-index: 0;
+}
+
+.image-badge {
+    background: linear-gradient(135deg, #059669, #10b981);
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.5);
+}
+
+/* Feature pills */
+.feature-pill {
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+    border: 1px solid #bbf7d0;
+}
+
+/* ============================================================
+   HIGHLIGHTS SECTION
+   ============================================================ */
+
+.highlight-section {
+    background: linear-gradient(135deg, #062619 0%, #0a3d28 50%, #0f5c3c 100%);
+}
+
+.highlight-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.35s ease;
+}
+
+.highlight-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(251, 191, 36, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.highlight-icon {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(245, 158, 11, 0.1));
+    border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+/* ============================================================
+   GALLERY / IMAGE CARDS
+   ============================================================ */
+
+.gallery-card {
+    overflow: hidden;
+    border-radius: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.07);
+}
+
+.gallery-card .gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(6, 38, 25, 0.8) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+
+.testimonial-card {
+    background: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07);
+    border: 1px solid #e7f5ee;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 12px 50px rgba(16, 185, 129, 0.12);
+    transform: translateY(-4px);
+}
+
+/* ============================================================
+   CTA BANNER
+   ============================================================ */
+
+.cta-banner {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #fef9ee 100%);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.footer-bg {
+    background: linear-gradient(180deg, #062619 0%, #041a10 60%, #021008 100%);
+}
+
+.footer-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310b981' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Footer logo-icon (overrides header's) */
+footer .logo-icon {
+    background: linear-gradient(135deg, #059669, #10b981);
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+}
+
+/* ============================================================
+   UTILITIES / MISC
+   ============================================================ */
+
+/* Ensure images don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Placeholder shimmer (optional, for lazy-loaded images) */
+.img-placeholder {
+    background: linear-gradient(90deg, #e8f5e9 25%, #c8e6c9 50%, #e8f5e9 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* ============================================================
+   EDITORIAL ARTICLE STYLES
+   ============================================================ */
+
+/* Reading progress bar */
+#reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #10b981 0%, #fbbf24 100%);
+    width: 0%;
+    z-index: 100;
+    transition: width 0.1s ease-out;
+}
+
+/* Page Hero Premium Adjustments */
+.page-hero {
+    min-height: 60vh;
+}
+
+/* Drop Cap (Huruf Kapital Besar Khas Majalah Premium) */
+.editorial-lead::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 700;
+    float: left;
+    line-height: 4.2rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    color: #0f5c3c;
+    text-shadow: 2px 2px 0px rgba(251, 191, 36, 0.2);
+}
+
+/* Blockquote Editorial Premium */
+.editorial-blockquote {
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 2rem;
+    color: #062619;
+    background: linear-gradient(to right, rgba(16, 185, 129, 0.05), rgba(251, 191, 36, 0.02));
+    border-left: 4px solid #10b981;
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0;
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.editorial-blockquote::before {
+    content: "“";
+    position: absolute;
+    top: -0.5rem;
+    left: 0.75rem;
+    font-size: 5rem;
+    color: rgba(16, 185, 129, 0.15);
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+}
+
+/* Sticky outline / Table of Contents */
+.toc-sticky {
+    position: sticky;
+    top: 100px;
+}
+
+.toc-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+    font-size: 0.875rem;
+    color: #4b5563;
+    transition: all 0.3s ease;
+    border-left: 2px solid transparent;
+    padding-left: 1rem;
+    margin-left: -2px;
+}
+
+.toc-link:hover,
+.toc-link.active {
+    color: #10b981;
+    border-left-color: #10b981;
+    padding-left: 1.25rem;
+    font-weight: 600;
+}
+
+.toc-link.active {
+    background: linear-gradient(90deg, rgba(16, 185, 129, 0.04) 0%, transparent 100%);
+}
+
+/* Article body text style */
+.article-p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #374151;
+    margin-bottom: 1.75rem;
+}
+
+/* Beautiful highlight badge for stats inside article */
+.article-stat-box {
+    background: #ffffff;
+    border: 1px solid #f3f4f6;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+
+.article-stat-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.2);
+}

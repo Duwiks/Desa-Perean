@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Tentang Pura Beji Meninting — Sejarah, spiritualitas, dan warisan leluhur Desa Perean, Tabanan, Bali." />
+    <title>Tentang — Penglukatan Desa Perean</title>
+
+    <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        forest: { 950: '#021008', 900: '#041a10', 800: '#062619', 700: '#0a3d28', 600: '#0f5c3c', 500: '#166b47' },
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-[#fafaf8] overflow-x-hidden">
+
+    <!-- Reading Progress Bar -->
+    <div id="reading-progress"></div>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- ══════════════════ ARTICLE HERO BANNER ══════════════════ -->
+    <section class="hero-section relative flex flex-col items-center justify-center text-center px-6 overflow-hidden"
+        style="background: linear-gradient(to bottom, rgba(6, 38, 25, 0.6) 0%, rgba(6, 38, 25, 0.25) 50%, rgba(6, 38, 25, 0.9) 100%), url('assets/img/temple.png') center / cover no-repeat fixed;">
+
+        <!-- Floating orbs -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none">
+        </div>
+        <div class="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full bg-amber-400/10 blur-3xl pointer-events-none">
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto pt-28 pb-32">
+            <!-- Article Category Badge -->
+            <div class="inline-flex items-center gap-2 bg-amber-400/20 border border-amber-400/30 rounded-full px-4 py-2 mb-6"
+                data-aos="fade-down">
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                <span class="text-amber-300 text-xs font-heading font-semibold uppercase tracking-widest">Eksplorasi
+                    Budaya &amp; Spiritual</span>
+            </div>
+
+            <h1 class="lg:mt-6 font-display text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6"
+                data-aos="fade-up" data-aos-delay="150">
+                Menelusuri Jejak <br />
+                <em class="text-amber-400 not-italic">Pura Beji Meninting</em><br />
+                <span class="text-emerald-300">DESA PEREAN</span>
+            </h1>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+            <div class="animate-bounce flex flex-col items-center gap-2 text-white/40">
+                <span class="text-[10px] uppercase tracking-widest font-sans">Gulir ke bawah</span>
+                <i class="fas fa-chevron-down text-sm"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ MAIN EDITORIAL GRID ══════════════════ -->
+    <main class="py-12 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 items-start">
+
+            <!-- LEFT COLUMN: STICKY TABLE OF CONTENTS & ARTICLE STATS -->
+            <aside class="hidden lg:block lg:col-span-1 toc-sticky">
+                <div class="bg-white rounded-3xl p-6 border border-emerald-100 shadow-sm" data-aos="fade-right">
+                    <h3
+                        class="font-heading font-bold text-xs uppercase tracking-wider text-forest-800 mb-4 pb-2 border-b border-gray-100">
+                        Daftar Isi Artikel
+                    </h3>
+                    <nav class="space-y-1">
+                        <a href="#sejarah" class="toc-link">
+                            <span class="text-xs font-mono opacity-50">01</span> Sejarah &amp; Asal-Usul
+                        </a>
+                        <a href="#tokoh" class="toc-link">
+                            <span class="text-xs font-mono opacity-50">02</span> Ida Pacung Sakti
+                        </a>
+                        <a href="#makna" class="toc-link">
+                            <span class="text-xs font-mono opacity-50">03</span> Makna &amp; Peran Pura
+                        </a>
+                        <a href="#tips" class="toc-link">
+                            <span class="text-xs font-mono opacity-50">04</span> Tips &amp; Tata Tertib
+                        </a>
+                        <a href="#galeri" class="toc-link">
+                            <span class="text-xs font-mono opacity-50">05</span> Dokumentasi Galeri
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Editorial Did You Know Info Box -->
+                <div class="bg-gradient-to-br from-forest-900 to-forest-850 rounded-3xl p-6 text-white mt-6 shadow-lg border border-forest-800"
+                    data-aos="fade-right" data-aos-delay="150">
+                    <div
+                        class="w-10 h-10 rounded-xl bg-amber-400/20 flex items-center justify-center mb-4 border border-amber-400/30">
+                        <i class="fas fa-lightbulb text-amber-400 text-lg animate-bounce"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-sm text-amber-300 mb-2">Tahukah Anda?</h4>
+                    <p class="text-emerald-100/70 text-xs leading-relaxed">
+                        Tahun Saka 13 setara dengan tahun 91 Masehi. Ini menjadikan catatan spiritual Pura Beji
+                        Meninting salah satu yang tertua di Baturiti, Tabanan.
+                    </p>
+                </div>
+            </aside>
+
+            <!-- RIGHT COLUMN: MAIN ARTICLE BODY -->
+            <article class="lg:col-span-3 bg-white rounded-[2.5rem] p-8 md:p-12 shadow-sm border border-gray-100"
+                data-aos="fade-up">
+
+                <!-- SECTION 1: SEJARAH & ASAL-USUL -->
+                <section id="sejarah" class="scroll-mt-28 mb-16">
+                    <div class="inline-flex items-center gap-2 bg-emerald-50 rounded-full px-3 py-1.5 mb-4">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        <span
+                            class="text-emerald-700 text-[10px] font-heading font-semibold uppercase tracking-wider">Bagian
+                            Satu</span>
+                    </div>
+
+                    <h2 class="font-display text-3xl md:text-4xl text-forest-800 mb-6 font-bold leading-tight">
+                        Mata Air Sakral Sejak Tahun Saka 13
+                    </h2>
+
+                    <p class="article-p editorial-lead">
+                        Pura Beji Meninting merupakan permata spiritual tersembunyi di Desa Perean yang memiliki nilai
+                        sejarah dan budaya yang teramat tinggi. Keberadaannya tidak terlepas dari kisah perjalanan para
+                        dewa dalam menjaga keseimbangan alam dan menyembunyikan mata air suci (tirta) lestari di Pulau
+                        Bali sejak Zaman Kuno.
+                    </p>
+
+                    <p class="article-p">
+                        Berdasarkan naskah-naskah kuno seperti <strong>Lontar Usana Bali</strong>, pada Tahun Saka 13
+                        (91 Masehi), wilayah ini ditunjuk sebagai lokasi penyimpanan salah satu <em>Tirta Suci</em>
+                        penyelamat bumi. Keberadaan mata air kuno di dalam beji (pemandian suci) tersebut terpelihara
+                        dengan sangat asri oleh generasi ke generasi.
+                    </p>
+
+                    <!-- Editorial Full Width Image Callout -->
+                    <div class="my-10 rounded-2xl overflow-hidden shadow-md border border-gray-100 relative group">
+                        <img src="assets/img/waterfall.png" alt="Mata Air Suci Pura Beji Meninting"
+                            class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                            <div>
+                                <span
+                                    class="text-amber-400 font-heading font-bold text-xs uppercase tracking-widest block mb-1">Mata
+                                    Air Alami</span>
+                                <h3 class="text-white font-display text-lg font-semibold">Urat Nadi Kehidupan Spiritual
+                                    Masyarakat Perean</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="article-p">
+                        Air yang memancar di Pura Beji Meninting terkenal dengan tingkat kemurniannya yang luar biasa.
+                        Berada di celah tebing hijau yang rimbun, gemericik airnya melahirkan aura meditasi yang
+                        menyejukkan batin bagi siapapun yang melangkahkan kaki ke dalam area pura.
+                    </p>
+
+                    <blockquote class="editorial-blockquote">
+                        "Setiap tetes tirta di Beji Meninting memikul memori kuno, menjembatani kehidupan duniawi hari
+                        ini dengan kedamaian spiritual ribuan tahun yang lampau."
+                    </blockquote>
+                </section>
+
+                <hr class="border-gray-100 my-12" />
+
+                <!-- SECTION 2: IDA PACUNG SAKTI -->
+                <section id="tokoh" class="scroll-mt-28 mb-16">
+                    <div class="inline-flex items-center gap-2 bg-emerald-50 rounded-full px-3 py-1.5 mb-4">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        <span
+                            class="text-emerald-700 text-[10px] font-heading font-semibold uppercase tracking-wider">Bagian
+                            Dua</span>
+                    </div>
+
+                    <h2 class="font-display text-3xl md:text-4xl text-forest-800 mb-6 font-bold leading-tight">
+                        Ida Pacung Sakti &amp; Pembangunan Kompleks Pura
+                    </h2>
+
+                    <p class="article-p">
+                        Perjalanan sejarah beji ini memasuki babak baru berabad-abad kemudian. Sosok ksatria spiritual
+                        terkemuka, <strong>Ida Pacung Sakti</strong> dari <strong>Puri Ageng Perean</strong>, berperan
+                        sentral dalam peresmian pemujaan di tempat suci ini.
+                    </p>
+
+                    <!-- Side-by-side text and side-card layout -->
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-8 my-8 items-center">
+                        <div class="md:col-span-3">
+                            <p class="article-p">
+                                Saat beliau memimpin dan mengawasi pembuatan bendungan saluran irigasi tradisional (yang
+                                dikenal sebagai <em>empelan</em>) untuk menunjang kehidupan subak, beliau memilih tepi
+                                tebing di atas mata air ini untuk melakukan yoga semadi.
+                            </p>
+                            <p class="article-p">
+                                Dari proses perenungan suci itulah, beliau menerima petunjuk niskala (wahyu) untuk
+                                menata beji tersebut dan mendirikan pelinggih pemujaan permanen. Kompleks pelinggih
+                                inilah yang sekarang tegak kukuh menjaga kesucian sumber air.
+                            </p>
+                        </div>
+                        <div class="md:col-span-2">
+                            <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-100 relative">
+                                <img src="assets/img/gungdion.png" alt="Situs Sejarah Desa Perean"
+                                    class="w-full h-[280px] object-cover" />
+                                <div class="p-4 bg-gradient-to-b from-white to-gray-50 border-t border-gray-100">
+                                    <h4 class="font-heading font-bold text-xs text-forest-850">Puri Ageng Perean</h4>
+                                    <p class="text-[11px] text-gray-400 mt-1 leading-relaxed">Tokoh historis yang
+                                        mengawasi kesejahteraan sistem irigasi subak kuno.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="article-p">
+                        Sinergi historis antara bendungan saluran air subak dan pendirian Pura Beji Meninting
+                        membuktikan bahwa nenek moyang kita telah mempraktikkan manajemen ekologi berbasis kearifan
+                        lokal sejak ratusan tahun lalu. Air tidak hanya dikelola secara fisik, namun juga dimuliakan
+                        secara spiritual.
+                    </p>
+                </section>
+
+                <hr class="border-gray-100 my-12" />
+
+                <!-- SECTION 3: MAKNA & FUNGSI -->
+                <section id="makna" class="scroll-mt-28 mb-16">
+                    <div class="inline-flex items-center gap-2 bg-emerald-50 rounded-full px-3 py-1.5 mb-4">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        <span
+                            class="text-emerald-700 text-[10px] font-heading font-semibold uppercase tracking-wider">Bagian
+                            Tiga</span>
+                    </div>
+
+                    <h2 class="font-display text-3xl md:text-4xl text-forest-800 mb-6 font-bold leading-tight">
+                        Makna Spiritual &amp; Peran Terhadap Lingkungan
+                    </h2>
+
+                    <p class="article-p">
+                        Saat ini, Pura Beji Meninting terus memegang peranan multi-dimensi yang vital bagi kelangsungan
+                        hidup adat, sosial, dan pertanian subak di Desa Perean:
+                    </p>
+
+                    <!-- Beautiful structured Grid List inside article body -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                        <div class="article-stat-box rounded-2xl p-6">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 font-bold">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-forest-800 text-sm mb-2">Penyucian Diri (Melukat)
+                            </h4>
+                            <p class="text-gray-500 text-xs leading-relaxed">Mata air Beji Meninting dipercaya mampu
+                                membersihkan noda spiritual, pikiran negatif, dan mendatangkan kedamaian spiritual batin
+                                bagi para pemohonnya.</p>
+                        </div>
+                        <div class="article-stat-box rounded-2xl p-6">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 font-bold">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-forest-800 text-sm mb-2">Penjaga Ekosistem Sawah</h4>
+                            <p class="text-gray-500 text-xs leading-relaxed">Debit air konstan dari beji ini adalah
+                                tumpuan bagi berjalannya ketahanan pangan subak lokal, menyuburkan hektaran sawah
+                                terasering di sekeliling desa.</p>
+                        </div>
+                        <div class="article-stat-box rounded-2xl p-6">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 font-bold">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-forest-800 text-sm mb-2">Cagar Warisan Arsitektur
+                            </h4>
+                            <p class="text-gray-500 text-xs leading-relaxed">Kompleks pura melestarikan seni ukir batu
+                                padas Bali kuno yang berpadu serasi dengan nuansa lumut alami bebatuan beji yang sakral.
+                            </p>
+                        </div>
+                        <div class="article-stat-box rounded-2xl p-6">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4 font-bold">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-forest-800 text-sm mb-2">Pusat Harmoni Kosmis</h4>
+                            <p class="text-gray-500 text-xs leading-relaxed">Menjadi tempat pelaksanaan upacara
+                                persembahan syukur yang mempertemukan unsur kebersamaan, rasa cinta alam, dan bakti
+                                spiritual masyarakat.</p>
+                        </div>
+                    </div>
+
+                    <p class="article-p">
+                        Wisatawan yang berkunjung tidak hanya dapat mengagumi keindahan lanskap arsitektur beji ini,
+                        tetapi juga berkesempatan untuk merasakan ketenangan absolut yang telah bertahan selama ratusan
+                        tahun di Desa Perean.
+                    </p>
+                </section>
+
+                <hr class="border-gray-100 my-12" />
+
+                <!-- SECTION 4: TIPS BERKUNJUNG -->
+                <section id="tips" class="scroll-mt-28">
+                    <div class="inline-flex items-center gap-2 bg-emerald-50 rounded-full px-3 py-1.5 mb-4">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        <span
+                            class="text-emerald-700 text-[10px] font-heading font-semibold uppercase tracking-wider">Bagian
+                            Empat</span>
+                    </div>
+
+                    <h2 class="font-display text-3xl md:text-4xl text-forest-800 mb-6 font-bold leading-tight">
+                        Tips Berkunjung &amp; Tata Tertib Adat
+                    </h2>
+
+                    <p class="article-p mb-8">
+                        Untuk menjaga kesucian kawasan Pura Beji Meninting dan kenyamanan bersama, mohon perhatikan
+                        beberapa tata tertib dan rekomendasi kunjungan berikut:
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <!-- Tip 1 -->
+                        <div
+                            class="p-6 rounded-2xl bg-emerald-50/30 border border-emerald-100 hover:border-emerald-200 transition-all duration-300">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4">
+                                <i class="fas fa-tshirt text-lg"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-forest-800 text-sm mb-2">Pakaian Sopan &amp; Adat
+                            </h4>
+                            <p class="text-gray-500 text-xs leading-relaxed">
+                                Gunakan kain sarung dan selendang saat memasuki area pura. Tersedia penyewaan kain di
+                                pintu masuk jika Anda belum menyiapkannya.
+                            </p>
+                        </div>
+
+                        <!-- Tip 2 -->
+                        <div
+                            class="p-6 rounded-2xl bg-amber-50/30 border border-amber-100 hover:border-amber-200 transition-all duration-300">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600 mb-4">
+                                <i class="fas fa-pray text-lg"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-forest-800 text-sm mb-2">Hormati Prosesi Ritual</h4>
+                            <p class="text-gray-500 text-xs leading-relaxed">
+                                Jika sedang berlangsung upacara adat keagamaan atau prosesi melukat umat lain, mohon
+                                selalu menjaga ketenangan dan tidak melintas di depan orang yang sedang bersembahyang.
+                            </p>
+                        </div>
+
+                        <!-- Tip 3 -->
+                        <div
+                            class="p-6 rounded-2xl bg-blue-50/30 border border-blue-100 hover:border-blue-200 transition-all duration-300">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 mb-4">
+                                <i class="fas fa-camera text-lg"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-forest-800 text-sm mb-2">Aturan Dokumentasi Foto</h4>
+                            <p class="text-gray-500 text-xs leading-relaxed">
+                                Anda dipersilakan mengambil foto keindahan tebing dan lanskap pura. Namun, harap meminta
+                                izin kepada pemandu jika ingin memotret prosesi ritual secara dekat.
+                            </p>
+                        </div>
+
+                        <!-- Tip 4 -->
+                        <div
+                            class="p-6 rounded-2xl bg-red-50/30 border border-red-100 hover:border-red-200 transition-all duration-300">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center text-red-600 mb-4">
+                                <i class="fas fa-ban text-lg"></i>
+                            </div>
+                            <h4 class="font-heading font-bold text-forest-800 text-sm mb-2">Larangan Masuk Wanita Haid
+                            </h4>
+                            <p class="text-gray-500 text-xs leading-relaxed">
+                                Demi menjaga kesucian area pura (*kacemaran*), bagi wanita yang sedang dalam masa
+                                menstruasi/haid diharapkan untuk tidak melewati batas gerbang utama suci pura.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="border-gray-100 my-12" />
+
+                <!-- SECTION 5: GALERI FOTO -->
+                <section id="galeri" class="scroll-mt-28">
+                    <div class="inline-flex items-center gap-2 bg-emerald-50 rounded-full px-3 py-1.5 mb-4">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        <span
+                            class="text-emerald-700 text-[10px] font-heading font-semibold uppercase tracking-wider">Bagian
+                            Lima</span>
+                    </div>
+
+                    <h2 class="font-display text-3xl md:text-4xl text-forest-800 mb-6 font-bold leading-tight">
+                        Dokumentasi Visual &amp; Lanskap Keindahan
+                    </h2>
+
+                    <p class="article-p mb-8">
+                        Berikut adalah potret dokumentasi visual alam, pura beji, dan lanskap persawahan di sekitar Pura
+                        Beji Meninting yang terekam secara alami dan eksotis:
+                    </p>
+
+                    <!-- Elegant Clean Magazine-style Gallery Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div
+                            class="gallery-card h-64 group relative overflow-hidden rounded-2xl border border-gray-150 shadow-sm">
+                            <img src="assets/img/temple.png" alt="Pura Beji Meninting"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <div
+                                class="gallery-overlay bg-gradient-to-t from-forest-950/80 to-transparent flex items-end p-4">
+                                <span class="text-white font-heading font-bold text-xs uppercase tracking-wide">Pura
+                                    Beji Meninting</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="gallery-card h-64 group relative overflow-hidden rounded-2xl border border-gray-150 shadow-sm">
+                            <img src="assets/img/waterfall.png" alt="Mata Air Penglukatan"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <div
+                                class="gallery-overlay bg-gradient-to-t from-forest-950/80 to-transparent flex items-end p-4">
+                                <span class="text-white font-heading font-bold text-xs uppercase tracking-wide">Mata Air
+                                    Penglukatan</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="gallery-card h-64 group relative overflow-hidden rounded-2xl border border-gray-150 shadow-sm">
+                            <img src="assets/img/riceterrace.png" alt="Subak Desa Perean"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <div
+                                class="gallery-overlay bg-gradient-to-t from-forest-950/80 to-transparent flex items-end p-4">
+                                <span class="text-white font-heading font-bold text-xs uppercase tracking-wide">Subak
+                                    Desa Perean</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="gallery-card h-64 group relative overflow-hidden rounded-2xl border border-gray-150 shadow-sm">
+                            <img src="assets/img/lake.png" alt="Danau Sekitar Baturiti"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <div
+                                class="gallery-overlay bg-gradient-to-t from-forest-950/80 to-transparent flex items-end p-4">
+                                <span class="text-white font-heading font-bold text-xs uppercase tracking-wide">Lanskap
+                                    Baturiti</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+
+        </div>
+    </main>
+
+    <!-- ══════════════════ CTA BANNER ══════════════════ -->
+    <section class="cta-banner py-20 px-6 mt-12" data-aos="fade-up">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-3xl md:text-5xl text-forest-900 mb-4">
+                Mulai Perjalanan Spiritual Anda
+            </h2>
+            <p class="text-amber-800/70 mb-10 max-w-xl mx-auto">Mari kunjungi Pura Beji Meninting, rasakan kesegaran
+                penyucian melukat dan kedamaian sejati Desa Perean.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="kontak.html"
+                    class="bg-forest-800 hover:bg-forest-700 text-white px-8 py-4 rounded-2xl font-heading font-bold text-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-map-marked-alt"></i>Lihat Peta &amp; Rute
+                </a>
+                <a href="index.html"
+                    class="bg-white hover:bg-gray-50 text-forest-800 px-8 py-4 rounded-2xl font-heading font-bold text-sm border-2 border-forest-800/20 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-home"></i>Kembali ke Beranda
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page Specific Reading Progress and TOC tracking Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Reading Progress Bar Indicator
+            window.addEventListener('scroll', () => {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById('reading-progress').style.width = scrolled + '%';
+            });
+
+            // 2. Active Scrollspy for Table of Contents
+            const sections = document.querySelectorAll('article section');
+            const tocLinks = document.querySelectorAll('.toc-link');
+
+            const makeActive = (link) => {
+                tocLinks.forEach(item => item.classList.remove('active'));
+                link.classList.add('active');
+            };
+
+            const checkScroll = () => {
+                const scrollPos = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+                const offsetHeight = 120; // offset of main-header
+
+                sections.forEach((section, index) => {
+                    if (scrollPos >= section.offsetTop - offsetHeight) {
+                        const targetId = section.getAttribute('id');
+                        const correspondingLink = document.querySelector(`.toc-link[href="#${targetId}"]`);
+                        if (correspondingLink) {
+                            makeActive(correspondingLink);
+                        }
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', checkScroll);
+            checkScroll(); // Init call
+        });
+    </script>
+</body>
+
+</html>

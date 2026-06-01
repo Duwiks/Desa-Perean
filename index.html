@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Desa Wisata Perean — Surga tersembunyi di Tabanan, Bali. Temukan keindahan budaya, alam, dan keramahan lokal." />
+    <title>Penglukatan Desa Perean</title>
+
+    <link rel="icon" type="image/jpeg" href="assets/img/logo.jpg">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        forest: { 950: '#021008', 900: '#041a10', 800: '#062619', 700: '#0a3d28', 600: '#0f5c3c', 500: '#166b47' },
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- ══════════════════ HERO SECTION ══════════════════ -->
+    <section class="hero-section relative flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+
+        <!-- Floating orbs -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none">
+        </div>
+        <div class="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full bg-amber-400/10 blur-3xl pointer-events-none">
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto pt-28 pb-32">
+
+            <!-- Main Headline -->
+            <h3 class="lg:mt-9 font-display text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6"
+                data-aos="fade-up" data-aos-delay="200">
+                Selamat Datang Di <em class="text-amber-400 not-italic"> <br>Pura Beji Meninting
+                </em><br />
+                <span class="text-emerald-300">DESA PEREAN </span>
+            </h3>
+
+            <p class="text-white/70 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed" data-aos="fade-up"
+                data-aos-delay="350">
+                Pura Beji Meninting merupakan salah satu pura beji yang memiliki nilai sejarah, spiritual, dan budaya
+                yang tinggi bagi masyarakat setempat
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up"
+                data-aos-delay="450">
+                <a href="tentang.html"
+                    class="hero-cta-primary px-8 py-4 rounded-2xl text-emerald-950 font-heading font-bold text-sm tracking-wide inline-flex items-center gap-2">
+                    Jelajahi Desa <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#tentang"
+                    class="hero-cta-secondary px-8 py-4 rounded-2xl text-white font-heading font-semibold text-sm tracking-wide inline-flex items-center gap-2">
+                    <i class="fas fa-play-circle"></i> Tentang Kami
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator z-10">
+            <div class="flex flex-col items-center gap-2 text-white/40">
+                <span class="text-[10px] uppercase tracking-widest font-sans">Gulir ke bawah</span>
+                <i class="fas fa-chevron-down text-sm"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ ABOUT SECTION ══════════════════ -->
+    <section id="tentang" class="py-28 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Image Side -->
+                <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-image-frame rounded-3xl overflow-hidden relative z-10 shadow-2xl">
+                        <img src="assets/img/riceterrace.png" alt="Suasana Desa Perean"
+                            class="w-full h-[520px] object-cover" loading="lazy" />
+                        <!-- Overlay gradient -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-forest-900/50 to-transparent"></div>
+                    </div>
+
+                    <!-- Floating badge -->
+                    <div class="image-badge absolute -bottom-6 -right-6 md:bottom-8 md:-right-8 z-20 rounded-2xl px-5 py-4 text-white shadow-xl"
+                        data-aos="zoom-in" data-aos-delay="300">
+                        <div class="text-xs uppercase tracking-widest text-emerald-100 mb-1">MATA AIR SUCI</div>
+                        <div class="font-heading font-bold text-sm">Terjaga Alami Sejak Kuno</div>
+                        <div class="text-emerald-200 text-xs">Pura Beji Meninting</div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <div class="inline-flex items-center gap-2 bg-emerald-50 rounded-full px-4 py-2 mb-6">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                        <span
+                            class="text-emerald-700 text-xs font-heading font-semibold uppercase tracking-widest">SEJARAH
+                            & SPIRITUAL
+                        </span>
+                    </div>
+
+                    <h2 class="font-display text-4xl md:text-5xl text-forest-800 leading-tight mb-6">
+                        Jejak Tirta Suci & Warisan Leluhur
+                        <!-- <em class="text-emerald-600">Hidup &amp; Bernafas</em> -->
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-5">
+                        Pura Beji Meninting merupakan permata spiritual tersembunyi di Desa Perean yang memiliki nilai
+                        sejarah dan budaya yang tinggi. Keberadaannya tidak terlepas dari kisah perjalanan para dewa
+                        dalam menjaga keseimbangan alam dan menyembunyikan mata air suci (tirta) lestari di Pulau Bali
+                        sejak Tahun Saka 13 (91 Masehi).
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        Berabad-abad kemudian, Ida Pacung Sakti dari Puri Ageng Perean membangun tempat meditasi di
+                        sekitar mata air ini saat mengawasi pembuatan saluran air (empelan). Dari wahyu suci yang beliau
+                        terima, dibangunlah kompleks pelinggih yang kini menjadi hulu kehidupan bagi spiritualitas warga
+                        dan sistem pertanian subak setempat.
+                    </p>
+
+                    <!-- Feature Pills -->
+                    <div class="flex flex-wrap gap-3 mb-10">
+                        <span
+                            class="feature-pill rounded-full px-4 py-2 text-xs font-heading font-semibold text-emerald-700 flex items-center gap-1.5">
+                            <i class="fas fa-leaf text-emerald-500"></i>Mata Air Sakral
+                        </span>
+                        <span
+                            class="feature-pill rounded-full px-4 py-2 text-xs font-heading font-semibold text-emerald-700 flex items-center gap-1.5">
+                            <i class="fas fa-landmark text-emerald-500"></i>Sejarah Saka 13
+                        </span>
+                        <span
+                            class="feature-pill rounded-full px-4 py-2 text-xs font-heading font-semibold text-emerald-700 flex items-center gap-1.5">
+                            <i class="fas fa-shield-alt text-emerald-500"></i>Urat Nadi Subak
+                        </span>
+                        <span
+                            class="feature-pill rounded-full px-4 py-2 text-xs font-heading font-semibold text-emerald-700 flex items-center gap-1.5">
+                            <i class="fas fa-camera text-emerald-500"></i>Wisata Religi
+                        </span>
+                    </div>
+
+                    <a href="tentang.html"
+                        class="inline-flex items-center gap-3 bg-forest-800 hover:bg-forest-700 text-white px-7 py-4 rounded-2xl font-heading font-semibold text-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        Lihat Atraksi Wisata <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ HIGHLIGHTS SECTION ══════════════════ -->
+    <section class="highlight-section py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                    <span class="text-amber-300 text-xs font-heading font-semibold uppercase tracking-widest">Mengapa
+                        Kami</span>
+                </div>
+                <h2 class="font-display text-4xl md:text-5xl text-white mb-4">Keindahan &amp; Nilai <em
+                        class="text-amber-400">Pura Beji Meninting</em></h2>
+                <p class="text-emerald-200/60 max-w-xl mx-auto">Berbeda dari destinasi wisata lain, Pura Beji Meninting
+                    menawarkan kedamaian spiritual dan keharmonisan alam Desa Perean yang menyentuh jiwa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="highlight-card rounded-3xl p-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="highlight-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-water text-amber-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-lg mb-3">Tirta Penglukatan Suci</h3>
+                    <p class="text-emerald-200/60 text-sm leading-relaxed">Rasakan kesegaran air suci alami yang jernih
+                        langsung dari celah tebing batu untuk pembersihan diri lahir dan batin.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="highlight-card rounded-3xl p-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="highlight-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-leaf text-amber-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-lg mb-3">Sistem Subak Lestari</h3>
+                    <p class="text-emerald-200/60 text-sm leading-relaxed">Air suci mengalir langsung menyuburkan sawah
+                        terasering subak tradisional Bali yang menghijau indah di sekeliling pura.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="highlight-card rounded-3xl p-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="highlight-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-landmark text-amber-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-lg mb-3">Situs Sejarah Abadi</h3>
+                    <p class="text-emerald-200/60 text-sm leading-relaxed">Jejak sejarah kuno berabad-abad yang terawat
+                        dari era Ida Pacung Sakti dan naskah suci Lontar Usana Bali.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="highlight-card rounded-3xl p-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="highlight-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-mountain text-amber-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-lg mb-3">Atmosfer Tebing Asri</h3>
+                    <p class="text-emerald-200/60 text-sm leading-relaxed">Udara sejuk di bawah lembah tebing batu
+                        berlumut hijau alami yang hening, cocok untuk meditasi dan relaksasi.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="highlight-card rounded-3xl p-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="highlight-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-amber-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-lg mb-3">Kearifan Lokal Warga</h3>
+                    <p class="text-emerald-200/60 text-sm leading-relaxed">Sapaan hangat dan pemandu lokal dari Kelompok
+                        Sadar Wisata yang tulus membimbing kunjungan adat Anda.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="highlight-card rounded-3xl p-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="highlight-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-pray text-amber-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-lg mb-3">Upacara Adat Harmonis</h3>
+                    <p class="text-emerald-200/60 text-sm leading-relaxed">Saksikan keindahan ritual persembahan syukur
+                        yang menyatukan manusia, tuhan, dan alam (Tri Hita Karana).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ TESTIMONIALS ══════════════════ -->
+    <section class="py-24 px-6 bg-emerald-50/40 relative overflow-hidden">
+        <!-- Background accents -->
+        <div class="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-emerald-100/50 blur-3xl pointer-events-none">
+        </div>
+        <div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-amber-100/50 blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <div
+                    class="inline-flex items-center gap-2 bg-emerald-100/70 border border-emerald-200/50 rounded-full px-4 py-2 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span
+                        class="text-emerald-800 text-xs font-heading font-semibold uppercase tracking-widest">Testimoni
+                        Pengunjung</span>
+                </div>
+                <h2 class="font-display text-4xl text-forest-800 mb-3">Kisah Kedamaian <em
+                        class="text-emerald-600">Sanubari</em></h2>
+                <p class="text-gray-500 text-sm max-w-md mx-auto">Pengalaman spiritual nyata dari mereka yang telah
+                    merasakan penyucian dan keheningan Pura Beji Meninting.</p>
+            </div>
+
+            <!-- Interactive Testimonial Slider Frame -->
+            <div class="relative bg-white rounded-[2.5rem] p-8 md:p-12 shadow-xl shadow-emerald-900/5 border border-emerald-100/50 min-h-[300px] flex flex-col justify-between"
+                data-aos="fade-up">
+
+                <!-- Quote Icon Accent -->
+                <div class="absolute top-6 right-8 text-emerald-100 text-7xl font-serif pointer-events-none">“</div>
+
+                <!-- Testimonial Items -->
+                <div id="testimonial-slider">
+                    <!-- Slide 1 (Active) -->
+                    <div class="testimonial-slide opacity-100 transition-all duration-500 block">
+                        <div class="flex gap-1 mb-6">
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                        </div>
+                        <p class="text-forest-900/80 text-lg md:text-xl font-display italic leading-relaxed mb-8">
+                            "Melukat di Pura Beji Meninting adalah titik balik kedamaian batin saya. Suasana celah
+                            tebingnya yang hijau, gemericik air suci yang murni, dan kesakralan kawasannya benar-benar
+                            membersihkan pikiran penat dari kota besar."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-emerald-500/20">
+                                <div
+                                    class="w-full h-full bg-emerald-100 flex items-center justify-center font-heading font-bold text-emerald-700">
+                                    RH</div>
+                            </div>
+                            <div>
+                                <div class="font-heading font-bold text-sm text-forest-900">Rini Hartati</div>
+                                <div class="text-xs text-gray-400">Jakarta, Indonesia</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 (Hidden) -->
+                    <div class="testimonial-slide opacity-0 transition-all duration-500 hidden">
+                        <div class="flex gap-1 mb-6">
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                        </div>
+                        <p class="text-forest-900/80 text-lg md:text-xl font-display italic leading-relaxed mb-8">
+                            "An incredibly mystical and peaceful place. The natural spring water is so crisp and pure.
+                            Walking along the rice terrace pathway after the purification ceremony felt like stepping
+                            into an ancient, serene world."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-emerald-500/20">
+                                <div
+                                    class="w-full h-full bg-amber-100 flex items-center justify-center font-heading font-bold text-amber-700">
+                                    JM</div>
+                            </div>
+                            <div>
+                                <div class="font-heading font-bold text-sm text-forest-900">James Mitchell</div>
+                                <div class="text-xs text-gray-400">Sydney, Australia</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 (Hidden) -->
+                    <div class="testimonial-slide opacity-0 transition-all duration-500 hidden">
+                        <div class="flex gap-1 mb-6">
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                            <i class="fas fa-star text-amber-400 text-sm"></i>
+                        </div>
+                        <p class="text-forest-900/80 text-lg md:text-xl font-display italic leading-relaxed mb-8">
+                            "Masyarakat lokal Desa Perean sangat ramah dan menuntun tata cara melukat dengan tulus.
+                            Anak-anak kami juga senang diajak menyusuri aliran air subak yang sangat jernih. Liburan
+                            spiritual keluarga yang sangat berkesan."
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-emerald-500/20">
+                                <div
+                                    class="w-full h-full bg-blue-100 flex items-center justify-center font-heading font-bold text-blue-700">
+                                    DP</div>
+                            </div>
+                            <div>
+                                <div class="font-heading font-bold text-sm text-forest-900">Diah Puspita</div>
+                                <div class="text-xs text-gray-400">Surabaya, Indonesia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="flex items-center justify-between border-t border-gray-100 pt-6 mt-8">
+                    <!-- Dots -->
+                    <div class="flex gap-2">
+                        <button class="slider-dot w-8 h-2 rounded-full bg-emerald-600 transition-all duration-300"
+                            onclick="setSlide(0)" aria-label="Slide 1"></button>
+                        <button class="slider-dot w-2 h-2 rounded-full bg-gray-200 transition-all duration-300"
+                            onclick="setSlide(1)" aria-label="Slide 2"></button>
+                        <button class="slider-dot w-2 h-2 rounded-full bg-gray-200 transition-all duration-300"
+                            onclick="setSlide(2)" aria-label="Slide 3"></button>
+                    </div>
+
+                    <!-- Arrows -->
+                    <div class="flex gap-2">
+                        <button
+                            class="w-10 h-10 rounded-full border border-emerald-100 flex items-center justify-center hover:bg-emerald-600 hover:text-white hover:border-transparent text-emerald-800 transition-all duration-300"
+                            onclick="prevSlide()" aria-label="Previous Slide">
+                            <i class="fas fa-chevron-left text-xs"></i>
+                        </button>
+                        <button
+                            class="w-10 h-10 rounded-full border border-emerald-100 flex items-center justify-center hover:bg-emerald-600 hover:text-white hover:border-transparent text-emerald-800 transition-all duration-300"
+                            onclick="nextSlide()" aria-label="Next Slide">
+                            <i class="fas fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let currentSlideIndex = 0;
+            const slides = document.getElementsByClassName("testimonial-slide");
+            const dots = document.getElementsByClassName("slider-dot");
+
+            function showSlide(index) {
+                if (index >= slides.length) currentSlideIndex = 0;
+                else if (index < 0) currentSlideIndex = slides.length - 1;
+                else currentSlideIndex = index;
+
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].classList.add("hidden", "opacity-0");
+                    slides[i].classList.remove("block", "opacity-100");
+                    dots[i].classList.remove("w-8", "bg-emerald-600");
+                    dots[i].classList.add("w-2", "bg-gray-200");
+                }
+
+                slides[currentSlideIndex].classList.remove("hidden", "opacity-0");
+                // dynamic delay transition
+                setTimeout(() => {
+                    slides[currentSlideIndex].classList.add("block", "opacity-100");
+                }, 20);
+
+                dots[currentSlideIndex].classList.remove("w-2", "bg-gray-200");
+                dots[currentSlideIndex].classList.add("w-8", "bg-emerald-600");
+            }
+
+            function nextSlide() {
+                showSlide(currentSlideIndex + 1);
+            }
+
+            function prevSlide() {
+                showSlide(currentSlideIndex - 1);
+            }
+
+            function setSlide(index) {
+                showSlide(index);
+            }
+
+            // Auto slide every 8 seconds
+            let slideInterval = setInterval(nextSlide, 8000);
+
+            // Pause auto slide on click
+            const controlButtons = document.querySelectorAll('.slider-dot, button[onclick]');
+            controlButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    clearInterval(slideInterval);
+                    slideInterval = setInterval(nextSlide, 10000); // restart with longer timer
+                });
+            });
+        </script>
+    </section>
+
+    <!-- ══════════════════ CTA BANNER ══════════════════ -->
+    <section class="cta-banner py-20 px-6" data-aos="fade-up">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-4xl md:text-5xl text-forest-900 mb-4">
+                Siap Merasakan <em>Keajaiban</em> Pura Beji Meninting?
+            </h2>
+            <p class="text-amber-800/70 mb-10 max-w-xl mx-auto">Rencanakan perjalanan Anda sekarang dan ciptakan
+                kenangan tak terlupakan bersama keluarga tercinta.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tentang.html"
+                    class="bg-forest-800 hover:bg-forest-700 text-white px-8 py-4 rounded-2xl font-heading font-bold text-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-map-marked-alt"></i>Pelajari Sejarah
+                </a>
+                <a href="kontak.html"
+                    class="bg-white hover:bg-gray-50 text-forest-800 px-8 py-4 rounded-2xl font-heading font-bold text-sm border-2 border-forest-800/20 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope"></i>Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

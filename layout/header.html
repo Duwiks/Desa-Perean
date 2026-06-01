@@ -1,0 +1,78 @@
+<header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+    <div class="header-glass px-6 py-4 transition-all duration-500">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div
+                    class="logo-icon w-10 h-10 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                    <img src="assets/img/logo.jpg" alt="Logo" class="w-full h-full object-cover">
+                </div>
+                <div class="leading-tight">
+                    <span class="block font-display text-lg font-bold text-white tracking-wide">Perean</span>
+                    <span class="block text-[10px] text-amber-300 font-sans uppercase tracking-[0.2em]">Desa Wisata
+                        Bali</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-1">
+                <a href="index.html"
+                    class="nav-link px-4 py-2 rounded-xl text-sm font-medium text-white/90 hover:text-white hover:bg-white/15 transition-all duration-300 relative"
+                    data-page="index.html">
+                    <i class="fas fa-home mr-1.5 text-xs"></i>Beranda
+                </a>
+                <a href="tentang.html"
+                    class="nav-link px-4 py-2 rounded-xl text-sm font-medium text-white/90 hover:text-white hover:bg-white/15 transition-all duration-300 relative"
+                    data-page="tentang.html">
+                    <i class="fas fa-mountain mr-1.5 text-xs"></i>Tentang Penglukatan
+                </a>
+                <a href="kontak.html"
+                    class="nav-link px-4 py-2 rounded-xl text-sm font-medium text-white/90 hover:text-white hover:bg-white/15 transition-all duration-300 relative"
+                    data-page="kontak.html">
+                    <i class="fas fa-envelope mr-1.5 text-xs"></i>Kontak
+                </a>
+                <a href="#kontak"
+                    class="ml-3 px-5 py-2.5 rounded-xl text-sm font-semibold bg-amber-400 text-emerald-950 hover:bg-amber-300 transition-all duration-300 shadow-lg shadow-amber-500/30 hover:shadow-amber-400/50 hover:-translate-y-0.5">
+                    Kunjungi Kami <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                </a>
+            </nav>
+
+            <!-- Mobile Hamburger -->
+            <button id="hamburger-btn"
+                class="md:hidden flex flex-col gap-1.5 p-2 rounded-xl hover:bg-white/15 transition-all duration-300"
+                aria-label="Toggle menu">
+                <span
+                    class="hamburger-line w-6 h-0.5 bg-white rounded-full transition-all duration-300 origin-center"></span>
+                <span class="hamburger-line w-6 h-0.5 bg-white rounded-full transition-all duration-300"></span>
+                <span
+                    class="hamburger-line w-6 h-0.5 bg-white rounded-full transition-all duration-300 origin-center"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+            <nav class="flex flex-col gap-1 pt-4 pb-2 border-t border-white/10 mt-4">
+                <a href="index.html"
+                    class="nav-link mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-white/90 hover:text-white hover:bg-white/15 transition-all duration-300"
+                    data-page="index.html">
+                    <i class="fas fa-home w-5 mr-2"></i>Beranda
+                </a>
+                <a href="tentang.html"
+                    class="nav-link mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-white/90 hover:text-white hover:bg-white/15 transition-all duration-300"
+                    data-page="tentang.html">
+                    <i class="fas fa-mountain w-5 mr-2"></i>Tentang Penglukatan
+                </a>
+                <a href="kontak.html"
+                    class="nav-link mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-white/90 hover:text-white hover:bg-white/15 transition-all duration-300"
+                    data-page="kontak.html">
+                    <i class="fas fa-envelope w-5 mr-2"></i>Kontak
+                </a>
+                <a href="kontak.html"
+                    class="mt-2 px-5 py-3 rounded-xl text-sm font-semibold bg-amber-400 text-emerald-950 hover:bg-amber-300 transition-all duration-300 text-center">
+                    Kunjungi Kami <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </nav>
+        </div>
+    </div>
+</header>
