@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+.hero-section>* {
+    max-width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -424,4 +428,40 @@ img {
     transform: translateY(-4px);
     box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.1);
     border-color: rgba(16, 185, 129, 0.2);
+}
+
+/* ============================================================
+   RESPONSIVE FIXES
+   ============================================================ */
+
+/* Matikan background-attachment: fixed di mobile/tablet —
+   mencegah jank/scroll patah & bug rendering di iOS Safari */
+@media (max-width: 1024px) {
+    .hero-section {
+        background-attachment: scroll !important;
+    }
+}
+
+/* Drop cap & blockquote menyesuaikan di layar kecil */
+@media (max-width: 640px) {
+    .editorial-lead::first-letter {
+        font-size: 3.5rem;
+        line-height: 3rem;
+        padding-right: 0.5rem;
+    }
+
+    .editorial-blockquote {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        padding: 1.5rem 1.5rem 1.5rem 1.75rem;
+    }
+
+    .editorial-blockquote::before {
+        font-size: 3.5rem;
+        left: 0.5rem;
+    }
+
+    .article-p {
+        font-size: 0.975rem;
+    }
 }
